@@ -1,0 +1,51 @@
+cd      前往某目录
+mkdir   创建目录
+pwd     显示当前目录
+cat ### 查看###内容
+rm ###  从工作区删除文件
+
+git init    将当前目录变成可管理的仓库
+git add ####    将####添加到暂存区
+git commit -m"###"  将暂存区文件提交到仓库，备注
+git status      查看是否有变动的文件
+git diff ###    查看变动后的###和仓库中的###有什么区别
+git log     查看日志
+git reset --hard HEAD^  回到上一个版本，有几个^代表几个
+git reset --hard HEAD~n 回到上n个版本
+git reset --hard 版本号    回退到该版本号版本
+git reflog  获取各次版本号
+
+git checkout -- ### 丢弃在工作区或暂存区###的修改    可用于恢复未提交删除的文件
+git restore -- ### 新版丢弃修改
+
+git remote add origin url   绑定远程仓库
+git push origin branch      本地提交到远程
+git clone url   克隆远程仓库到本地
+
+git branch  查看当前分支
+git checkout -b branch_name  创建并切换到branch分支
+git branch branch_name  创建分支
+git checkout branch_name    切换到分支
+git merge branch_name   将分支合并到当前分支
+git branch -d name  删除分支
+
+git merge -no-ff-m"注释" branch_name  非快进合并
+
+git stash   保存当前工作进度
+git stash save "###"    保存当前工作进度并添加描述
+git stash list 列出所有stash
+
+git stash apply     应用最近stash
+git stash apply stash@{n}   应用指定stash
+git stash drop      删除stash
+git stash drop stash@{n}    删除指定stash
+git stash pop   应用stash，同时删除
+
+远程库默认名称时origin
+
+git remote  查看远程库信息
+git remote -v查看远程库详细信息
+
+修复bug分支一般合并到主分支而不推送到远程
+
+
