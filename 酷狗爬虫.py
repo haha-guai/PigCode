@@ -2,16 +2,20 @@ import requests
 import re
 import time
 import hashlib
+import os
 
 headers = {
     'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 Edg/129.0.0.0'}
 
 keyword = input('输入搜索的关键词:\n')
 start_time = time.time()
+
 url = 'https://complexsearch.kugou.com/v2/search/song'
-
-
 # 酷狗音乐搜索页网址
+
+if not os.path.exists('music_download/'):
+    os.mkdir('music_download/')
+# 确保下载目录存在
 
 
 def get_sign1(data_time):
@@ -143,7 +147,7 @@ for id in id_list:  # 循环下载id列表中的所有音乐
         while '|' in music_name:  # 通过替换，防止歌曲名中存在违规字符
             music_name = music_name.replace('|', '_')
         music_resopnse = requests.get(url=music_url, headers=headers).content  # 获取歌曲文件信息
-        with open(f'mu2\\{count}' + music_name + '.mp3', 'wb') as f:  # 将歌曲写入特定文件夹
+        with open(f'music_download\\{count}' + music_name + '.mp3', 'wb') as f:  # 将歌曲写入特定文件夹
             f.write(music_resopnse)
         print(str(count) + music_name + '  已完成')
         count += 1  # 下载数
