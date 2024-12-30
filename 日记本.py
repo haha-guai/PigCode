@@ -94,7 +94,7 @@ save_button2 = Button(frame_read, text="保存", font=('宋体', 15), command=sa
 def come_back():
     global word
     frame_read.place_forget()
-    word = read_text.get(1.0, END)# 更新word内容，保存阅读页的修改
+    word = read_text.get(1.0, END).rstrip()# 更新word内容，保存阅读页的修改,清除尾部自带换行符
     frame_write.place(x=0, y=0, width=600, height=700)
     submit_button.place(x=550, y=450, width=50, height=50)
     write_text.place(width=600, height=450)
@@ -122,13 +122,10 @@ look_button.place(x=500, y=450, width=50, height=50)
 # 显示按钮
 
 root.mainloop()
-
 '''
-目标：
-        日记本
-        输入文字，自动转换为*
-        按按钮显示明文,自动换回*
-        enter键将框内文字存储
-        保存按钮，自动保存
-        关闭前提醒
-        打开恢复上次内容'''
+缺陷：
+    换段落
+    显示时间
+    输入框显示修正
+    UI美化
+'''
