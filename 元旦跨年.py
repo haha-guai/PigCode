@@ -2,7 +2,6 @@ from wxauto import WeChat
 import time
 
 wx = WeChat()
-friend_dict = {}
 friend_list = []
 friend_infos = wx.GetAllFriends()
 
@@ -12,7 +11,7 @@ for friend in friend_infos:
             friend_list.append(friend['nickname'])
     except:
         pass
-print("朋友列表获取成功")
+print("列表获取成功")
 
 time_str = '2025-01-01 00:00:00'
 time_format = '%Y-%m-%d %H:%M:%S'
