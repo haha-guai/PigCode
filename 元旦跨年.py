@@ -25,7 +25,7 @@ while (timestamp - time.time()) > 0:
         
     elif (timestamp - time.time()) >= 700:
         print(f"剩余：{round(timestamp - time.time())}s")
-        time.sleep(30)
+        time.sleep(60)
     elif (timestamp - time.time()) >= 60:
         printf(f"剩余：{round(timestamp - time.time())}s")
         time.sleep(3)
@@ -34,3 +34,5 @@ while (timestamp - time.time()) > 0:
         time.sleep(1)
 for friend in friend_list:
     wx.SendMsg('元旦快乐', friend)
+    wx.SendMsg('44x.cn/106\n代码自己写的，网页链接偷的,对你的祝福是真的[跳跳]', friend)
+    wx.SendMsg('[庆祝]', friend)
