@@ -1,8 +1,11 @@
-
-window.onload = function ()
+/*window.onload = function ()
 {
-    alert("欢迎来到李猪儿的网页！");
-}
+    date = new Date()
+    var year = date.getFullYear();
+    var month = date.getMonth();
+    var day = date.getDate();
+    alert(year + '年' + (month + 1) + '月' + day + '日');
+}*/
 
 
 
