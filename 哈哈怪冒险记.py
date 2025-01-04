@@ -69,7 +69,16 @@ class Game():
 
             config_button = Button(frame, text="确认", command=lambda: frame.place_forget())
             config_button.place(x=600, y=400, width=40, height=40, anchor='se')
-
+            def config_button():
+                player_type = p_label2.cget('text')
+                if player_type == '忧郁哥':
+                    return 1
+                elif player_type == '绿毛龟':
+                    return 2
+                elif player_type == '鼠儿哥':
+                    return 3
+                elif player_type == '阳光男孩':
+                    return 4
             return e_name.get()
         else:
             self.basic_place()

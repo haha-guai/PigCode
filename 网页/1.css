@@ -1,6 +1,4 @@
-#kimi{font-size:25px}
-#author{font-size:20px; color:red}
-#wife{border:10px solid red}
-body{background-color:pink}
-#loading{background-color:lightgreen}
-#setting{position:fixed;top:0;right:0}
+#question{position:fixed;top:0;right:0;font-size:20px}
+#use_type{float:left}
+#f1{width:400px;height:600px}
+#htmlbody2{background-color:lightgreen}

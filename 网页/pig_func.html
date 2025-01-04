@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>登录界面</title>
+     <link rel="stylesheet" href="1.css">
+    <script src="pig_func_use.js"></script>
 </head>
-<body>
+<body id="htmlbody2">
+    <h2>填写个人信息，用于施展飞天猪儿术</h2>
     <form>
         <label>爱好：</label>
         <input type="radio" name="爱好" value="1"><label>唱</label>
@@ -15,10 +18,10 @@
         <br><br>
         <label>你举得作者有什么优点：</label>
         <br>
-        <input type="checkbox" name="优点"><label>英俊潇洒</label><br>
-        <input type="checkbox" name="优点"><label>玉树临风</label><br>
-        <input type="checkbox" name="优点"><label>才高八斗</label><br>
-        <input type="checkbox" name="优点"><label>学富五车</label><br>
+        <input type="checkbox" name="优点" checked><label>英俊潇洒</label><br>
+        <input type="checkbox" name="优点" checked><label>玉树临风</label><br>
+        <input type="checkbox" name="优点" checked><label>才高八斗</label><br>
+        <input type="checkbox" name="优点" checked><label>学富五车</label><br>
         <input type="checkbox" name="优点"><label>叽里呱啦</label><br>
         <input type="checkbox" name="优点"><label>阿巴阿巴</label><br>
         <br><br>
@@ -28,25 +31,17 @@
         <label>请上传照片</label>
         <input type="file">
         <br><br>
-        <select>
-            <option>2005</option>
-            <option>2006</option>
-            <option>2007</option>
+        <label>出生日期</label>
+        <select id="s1">
         </select>
-        <select>
+        <select id="s2">
+
+        </select>
+        <select id="s3">
             <option>01</option>
             <option>02</option>
             <option>03</option>
         </select>
-        <select>
-            <option>01</option>
-            <option>02</option>
-            <option>03</option>
-        </select>
-        <br><br>
-        <label>账号：</label><input type="text">
-        <br>
-        <label>密码：</label><input type="password">
         <br><br>
         <input type="submit">
         <input type="reset">
