@@ -5,7 +5,8 @@ import hashlib
 import os
 
 headers = {
-    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 Edg/129.0.0.0'}
+    'user-agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36',
+    'cookie':'kg_mid=a7fac3cb03371483e44099f089baf239; kg_dfid=2UHEJn1n8SAc183Vkl1eueOo; KuGooRandom=66461735205119732; kg_dfid_collect=d41d8cd98f00b204e9800998ecf8427e; ACK_SERVER_10017=%7B%22list%22%3A%5B%5B%22bjverifycode.service.kugou.com%22%5D%5D%7D; ACK_SERVER_10015=%7B%22list%22%3A%5B%5B%22bjlogin-user.kugou.com%22%5D%5D%7D; ACK_SERVER_10016=%7B%22list%22%3A%5B%5B%22bjreg-user.kugou.com%22%5D%5D%7D; Hm_lvt_aedee6983d4cfc62f509129360d6bb3d=1735314666,1737028174,1737090131,1737532795; HMACCOUNT=EBB3AE9950E8B78E; kg_mid_temp=a7fac3cb03371483e44099f089baf239; KuGoo=KugooID=1877367333&KugooPwd=666604F5294CAC03BD65693407C11F7B&NickName=%u98de%u5929%u732a&Pic=http://imge.kugou.com/kugouicon/165/20241113/20241113142506134099.jpg&RegState=1&RegFrom=&t=6c485f43e144d8f896148903264ebe2c83f29b72937d585152cf547cedefef9f&a_id=1014&ct=1737532822&UserName=%u006b%u0067%u006f%u0070%u0065%u006e%u0031%u0038%u0037%u0037%u0033%u0036%u0037%u0033%u0033%u0033&t1=; KugooID=1877367333; t=6c485f43e144d8f896148903264ebe2c83f29b72937d585152cf547cedefef9f; a_id=1014; UserName=kgopen1877367333; mid=a7fac3cb03371483e44099f089baf239; dfid=2UHEJn1n8SAc183Vkl1eueOo; Hm_lpvt_aedee6983d4cfc62f509129360d6bb3d=1737532825'}
 
 keyword = input('输入搜索的关键词:\n')
 start_time = time.time()
